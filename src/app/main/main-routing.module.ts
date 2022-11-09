@@ -14,7 +14,8 @@ import { RouterModule } from '@angular/router';
                     },
                     {
                         path: 'easylab',
-                        loadChildren: () => import('./easylab/easylab.module').then(m => m.EasyLabModule)
+                        loadChildren: () => import('./easylab/easylab.module').then(m => m.EasyLabModule),
+                        data: { permission: 'Pages.Tenant.EasyLab' }
                     },
                     { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
                     { path: '**', redirectTo: 'dashboard' },

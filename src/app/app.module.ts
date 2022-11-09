@@ -97,6 +97,11 @@ import { SubheaderModule } from './shared/common/sub-header/subheader.module';
 import { ChangeProfilePictureModalModule } from './shared/layout/profile/change-profile-picture-modal.module';
 import { ToggleDarkModeComponent } from './shared/layout/toggle-dark-mode/toggle-dark-mode.component';
 import { ActivatedRoute, Router } from '@angular/router';
+// Import from library
+import {
+    NgxAwesomePopupModule,
+    ConfirmBoxConfigModule,
+ } from '@costlydeveloper/ngx-awesome-popup';
 
 @NgModule({
     declarations: [
@@ -185,6 +190,17 @@ import { ActivatedRoute, Router } from '@angular/router';
         AppBsModalModule,
         SubheaderModule,
         ChangeProfilePictureModalModule,
+        NgxAwesomePopupModule.forRoot({
+            colorList: {
+              success: '#3caea3', // optional
+              info: '#2f8ee5', // optional
+              warning: '#ffc107', // optional
+              danger: '#e46464', // optional
+              customOne: '#3ebb1a', // optional
+              customTwo: '#bd47fa', // optional (up to custom five)
+            },
+          }),
+        ConfirmBoxConfigModule.forRoot()
     ],
     providers: [
         ImpersonationService,

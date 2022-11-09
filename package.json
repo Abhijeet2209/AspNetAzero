@@ -31,6 +31,7 @@
     "@angular/platform-server": "^14.1.1",
     "@angular/router": "^14.1.1",
     "@azure/msal-browser": "^2.28.1",
+    "@costlydeveloper/ngx-awesome-popup": "^3.2.0",
     "@fullcalendar/core": "^5.11.2",
     "@microsoft/signalr": "^6.0.1",
     "@popperjs/core": "^2.11.6",
